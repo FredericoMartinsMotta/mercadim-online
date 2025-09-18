@@ -15,24 +15,21 @@ const HeroSection = () => {
           
           {/* Conteúdo de texto */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">Pertin sô 
-o seu mercadim de confiança</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left text-[#2e6b4d]">Pertin sô  
+O seu mercadim de confiança</h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
               Praticidade e atendimento acolhedor pertinho de você.
             </p>
             
-            <Button onClick={handleWhatsAppClick} className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-6 text-lg font-semibold shadow-soft hover:shadow-hover transition-smooth" size="lg">
+            <Button onClick={handleWhatsAppClick} size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-6 font-semibold shadow-soft hover:shadow-hover transition-smooth text-xl">
               <MessageCircle className="mr-3" size={24} />
               Fale no WhatsApp
             </Button>
           </div>
 
           {/* Imagem */}
-          <div className="relative">
-            <img src={heroImage} alt="Interior do mercado Pertin sô" className="w-full h-auto rounded-2xl shadow-soft hover:shadow-hover transition-smooth" />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-2xl"></div>
-          </div>
+          
         </div>
       </div>
     </section>;

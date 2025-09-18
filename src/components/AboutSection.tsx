@@ -1,18 +1,12 @@
 import aboutImage from '@/assets/sobre-equipe.jpg';
-
 const AboutSection = () => {
-  return (
-    <section id="sobre" className="py-20 section-alt">
+  return <section id="sobre" className="py-20 section-alt">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Imagem */}
           <div className="order-2 lg:order-1">
-            <img 
-              src={aboutImage} 
-              alt="Equipe do Pertin sô" 
-              className="w-full h-auto rounded-2xl shadow-soft hover:shadow-hover transition-smooth"
-            />
+            <img src={aboutImage} alt="Equipe do Pertin sô" className="w-full h-auto rounded-2xl shadow-soft hover:shadow-hover transition-smooth" />
           </div>
 
           {/* Texto */}
@@ -28,9 +22,7 @@ const AboutSection = () => {
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="text-center lg:text-left">
                 <h3 className="text-xl font-semibold text-primary mb-2">Nossa Missão</h3>
-                <p className="text-muted-foreground">
-                  Ser o mercadinho de confiança da nossa comunidade.
-                </p>
+                <p className="text-muted-foreground">Ser o parceiro do dia a dia da comunidade.</p>
               </div>
               
               <div className="text-center lg:text-left">
@@ -43,8 +35,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
