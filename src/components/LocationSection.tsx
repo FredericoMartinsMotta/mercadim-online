@@ -1,4 +1,5 @@
-import { MapPin } from 'lucide-react';
+import { CreditCard } from 'lucide-react';
+import pagamentoImage from '@/assets/pagamento-real.jpg';
 
 const LocationSection = () => {
   return (
@@ -6,48 +7,44 @@ const LocationSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Nossa Localização
+            Pagamento Prático
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            📍 Estamos no Cidade Jardim, Goiânia – venha nos visitar!
+            Valorize seu condomínio ou sua empresa. Pagamento rápido e prático.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Mapa */}
+          {/* Imagem */}
           <div className="rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-smooth">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8791234567!2d-49.2578125!3d-16.6869444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQxJzEzLjAiUyA0OcKwMTUnMjguMSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Localização do Pertin sô"
+            <img 
+              src={pagamentoImage} 
+              alt="Sistema de pagamento Pertin sô" 
+              className="w-full h-96 object-cover"
             />
           </div>
 
           {/* Informações */}
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-4">
-              <MapPin className="text-primary mr-2" size={24} />
-              <h3 className="text-xl font-semibold text-primary">Endereço</h3>
+              <CreditCard className="text-primary mr-2" size={24} />
+              <h3 className="text-xl font-semibold text-primary">Formas de Pagamento</h3>
             </div>
             
             <p className="text-lg text-foreground mb-6">
-              Rua das Flores, 123<br />
-              Cidade Jardim<br />
-              Goiânia - GO<br />
-              CEP: 74000-000
+              Aceite diversos métodos de pagamento:<br />
+              • Cartão de crédito e débito<br />
+              • PIX instantâneo<br />
+              • Dinheiro<br />
+              • Vale alimentação
             </p>
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-primary mb-2">Horário de Funcionamento</h4>
+                <h4 className="font-semibold text-primary mb-2">Facilidade para Empresas</h4>
                 <p className="text-muted-foreground">
-                  Segunda a Sábado: 07:00 às 19:00<br />
-                  Domingo: 07:00 às 13:00
+                  Soluções personalizadas para condomínios e empresas.<br />
+                  Pagamento rápido, seguro e sem complicações.
                 </p>
               </div>
             </div>

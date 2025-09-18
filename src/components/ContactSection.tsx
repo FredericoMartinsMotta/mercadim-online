@@ -31,13 +31,6 @@ const ContactSection = () => {
       color: 'text-pink-600'
     },
     {
-      icon: MapPin,
-      title: 'Endereço',
-      description: 'Rua das Flores, 123 - Cidade Jardim',
-      action: () => {},
-      color: 'text-primary'
-    },
-    {
       icon: Clock,
       title: 'Horário',
       description: 'Seg-Sáb: 6h-22h | Dom: 7h-20h',
@@ -58,7 +51,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {contactInfo.map((item, index) => (
             <Card 
               key={index} 
@@ -87,7 +80,7 @@ const ContactSection = () => {
         <div className="text-center">
           <Button 
             onClick={handleWhatsAppClick}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 text-lg font-semibold shadow-soft hover:shadow-hover transition-smooth"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-6 text-lg font-semibold shadow-soft hover:shadow-hover transition-smooth"
             size="lg"
           >
             <MessageCircle className="mr-3" size={24} />

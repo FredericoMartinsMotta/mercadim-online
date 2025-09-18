@@ -1,19 +1,11 @@
-import { Apple, Coffee, ShoppingBasket, Sparkles } from 'lucide-react';
+import { Coffee, ShoppingBasket, Sparkles } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import frutasImage from '@/assets/produtos-frutas.jpg';
-import bebidasImage from '@/assets/produtos-bebidas.jpg';
-import merceariaImage from '@/assets/produtos-mercearia.jpg';
-import limpezaImage from '@/assets/produtos-limpeza.jpg';
+import bebidasImage from '@/assets/produtos-bebidas-real.jpg';
+import merceariaImage from '@/assets/produtos-mercearia-real.jpg';
+import limpezaImage from '@/assets/produtos-limpeza-real.jpg';
 
 const ProductsSection = () => {
   const products = [
-    {
-      title: 'Frutas Frescas',
-      description: 'Frutas selecionadas e sempre fresquinhas para sua família.',
-      image: frutasImage,
-      icon: Apple,
-      emoji: '🍎'
-    },
     {
       title: 'Bebidas Geladas',
       description: 'Refrigerantes, sucos e água sempre geladinhos.',
@@ -49,7 +41,7 @@ const ProductsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, index) => (
             <Card key={index} className="group overflow-hidden shadow-soft hover:shadow-hover transition-smooth">
               <div className="relative overflow-hidden">

@@ -1,6 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-mercado.jpg';
+import heroImage from '@/assets/hero-mercado-real.png';
+import logoImage from '@/assets/logo-pertin-so.png';
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
     // Substitua pelo número real do WhatsApp
@@ -15,8 +16,16 @@ const HeroSection = () => {
           
           {/* Conteúdo de texto */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-left text-[#2e6b4d]">Pertin sô  
-O seu mercadim de confiança</h1>
+            <div className="mb-6">
+              <img 
+                src={logoImage} 
+                alt="Pertin sô" 
+                className="h-24 md:h-32 mx-auto lg:mx-0 mb-4"
+              />
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left text-[#2e6b4d]">
+                O seu mercadim de confiança
+              </h1>
+            </div>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
               Praticidade e atendimento acolhedor pertinho de você.
@@ -29,7 +38,13 @@ O seu mercadim de confiança</h1>
           </div>
 
           {/* Imagem */}
-          
+          <div className="text-center">
+            <img 
+              src={heroImage} 
+              alt="Interior do Pertin sô" 
+              className="w-full max-w-lg mx-auto rounded-2xl shadow-soft hover:shadow-hover transition-smooth"
+            />
+          </div>
         </div>
       </div>
     </section>;

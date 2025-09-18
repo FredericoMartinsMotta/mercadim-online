@@ -1,4 +1,4 @@
-import aboutImage from '@/assets/sobre-equipe.jpg';
+import aboutImage from '@/assets/sobre-equipe-real.jpg';
 const AboutSection = () => {
   return <section id="sobre" className="py-20 section-alt">
       <div className="container mx-auto px-4 lg:px-8">
