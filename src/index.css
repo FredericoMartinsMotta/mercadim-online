@@ -9,7 +9,7 @@ Verde musgo (#2E6B4D), Amarelo ouro (#F5B82E), Branco, Cinza claro (#F2F2F2)
 @layer base {
   :root {
     /* Cores principais do Pertin sô */
-    --background: 0 0% 100%; /* Branco */
+    --background: 120 20% 97%; /* Fundo com leve tom verde */
     --foreground: 153 40% 28%; /* Verde musgo escuro para texto */
 
     --card: 0 0% 100%;
@@ -87,7 +87,7 @@ Verde musgo (#2E6B4D), Amarelo ouro (#F5B82E), Branco, Cinza claro (#F2F2F2)
 
 @layer components {
   .section-alt {
-    @apply bg-muted;
+    @apply bg-gradient-to-br from-muted/20 to-muted/40;
   }
   
   .hero-gradient {

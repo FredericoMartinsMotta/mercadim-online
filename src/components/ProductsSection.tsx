@@ -65,6 +65,18 @@ const ProductsSection = () => {
             </Card>
           ))}
         </div>
+
+        {/* Marcas dos Produtos */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-semibold text-primary mb-8">Marcas que Trabalhamos</h3>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
+            <div className="text-red-600 font-bold text-2xl">Coca-Cola</div>
+            <div className="text-blue-600 font-bold text-2xl">Downy</div>
+            <div className="text-orange-600 font-bold text-2xl">Balduco</div>
+            <div className="text-red-700 font-bold text-2xl">Garoto</div>
+            <div className="text-yellow-600 font-bold text-2xl">Camil</div>
+          </div>
+        </div>
       </div>
     </section>
   );

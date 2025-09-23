@@ -21,8 +21,8 @@ const AboutSection = () => {
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="text-center lg:text-left">
-                <h3 className="text-xl font-semibold text-primary mb-2">Nossa Missão</h3>
-                <p className="text-muted-foreground">Ser o parceiro do dia a dia da comunidade.</p>
+                <h3 className="text-xl font-semibold text-primary mb-2">Missão</h3>
+                <p className="text-muted-foreground">Facilitar a vida da vizinhança.</p>
               </div>
               
               <div className="text-center lg:text-left">

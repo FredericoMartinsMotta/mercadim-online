@@ -7,7 +7,7 @@ const LocationSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Pagamento Prático
+            Autoatendimento Prático
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Valorize seu condomínio ou sua empresa. Pagamento rápido e prático.
@@ -19,8 +19,8 @@ const LocationSection = () => {
           <div className="rounded-2xl overflow-hidden shadow-soft hover:shadow-hover transition-smooth">
             <img 
               src={pagamentoImage} 
-              alt="Sistema de pagamento Pertin sô" 
-              className="w-full h-96 object-cover"
+              alt="Autoatendimento Pertin sô" 
+              className="w-full h-[500px] object-cover object-center"
             />
           </div>
 
@@ -32,11 +32,7 @@ const LocationSection = () => {
             </div>
             
             <p className="text-lg text-foreground mb-6">
-              Aceite diversos métodos de pagamento:<br />
-              • Cartão de crédito e débito<br />
-              • PIX instantâneo<br />
-              • Dinheiro<br />
-              • Vale alimentação
+              Autoatendimento com cartão de crédito, débito e pix
             </p>
 
             <div className="space-y-4">
