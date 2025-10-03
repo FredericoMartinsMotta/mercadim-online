@@ -7,10 +7,10 @@ const LocationSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Autoatendimento Prático
+            Pagamento Prático
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Valorize seu condomínio ou sua empresa. Pagamento rápido e prático.
+            Escolha seus produtos, aproxime na leitora, escolha a forma de pagamento e aproveite!
           </p>
         </div>
 
@@ -32,14 +32,13 @@ const LocationSection = () => {
             </div>
             
             <p className="text-lg text-foreground mb-6">
-              Autoatendimento com cartão de crédito, débito e pix
+              Cartão de crédito, débito e pix.
             </p>
 
             <div className="space-y-4">
               <div>
-                <h4 className="font-semibold text-primary mb-2">Facilidade para Empresas</h4>
                 <p className="text-muted-foreground">
-                  Soluções personalizadas para condomínios e empresas.<br />
+                  Soluções personalizadas para o seu condomínio e empresa.<br />
                   Pagamento rápido, seguro e sem complicações.
                 </p>
               </div>

@@ -14,7 +14,7 @@ const ProductsSection = () => {
       emoji: '🥤'
     },
     {
-      title: 'Mercearia e Alimentos',
+      title: 'Mercearia e Padaria',
       description: 'Pães frescos, grãos, massas e produtos básicos do dia a dia.',
       image: merceariaImage,
       icon: ShoppingBasket,
@@ -26,6 +26,13 @@ const ProductsSection = () => {
       image: limpezaImage,
       icon: Sparkles,
       emoji: '🧼'
+    },
+    {
+      title: 'Salgadinhos e Doces',
+      description: 'Variedade de snacks e guloseimas para todos os gostos.',
+      image: bebidasImage,
+      icon: Coffee,
+      emoji: '🍫'
     }
   ];
 
@@ -37,11 +44,11 @@ const ProductsSection = () => {
             Nossos Produtos
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Tudo que você precisa para o seu dia a dia, com qualidade e preço justo.
+            As melhores marcas e uma ampla variedade vão estar à sua disposição.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <Card key={index} className="group overflow-hidden shadow-soft hover:shadow-hover transition-smooth">
               <div className="relative overflow-hidden">
@@ -66,17 +73,6 @@ const ProductsSection = () => {
           ))}
         </div>
 
-        {/* Marcas dos Produtos */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold text-primary mb-8">Marcas que Trabalhamos</h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
-            <div className="text-red-600 font-bold text-2xl">Coca-Cola</div>
-            <div className="text-blue-600 font-bold text-2xl">Downy</div>
-            <div className="text-orange-600 font-bold text-2xl">Balduco</div>
-            <div className="text-red-700 font-bold text-2xl">Garoto</div>
-            <div className="text-yellow-600 font-bold text-2xl">Camil</div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -29,13 +29,6 @@ const ContactSection = () => {
       description: '@pertinso',
       action: handleInstagramClick,
       color: 'text-pink-600'
-    },
-    {
-      icon: Clock,
-      title: 'Horário',
-      description: 'Seg-Sáb: 6h-22h | Dom: 7h-20h',
-      action: () => {},
-      color: 'text-primary'
     }
   ];
 
@@ -44,14 +37,14 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Entre em Contato
+            Vamos melhorar o seu dia a dia?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Estamos sempre prontos para atender você! Fale conosco pelos nossos canais.
+            Fale conosco.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {contactInfo.map((item, index) => (
             <Card 
               key={index} 
@@ -76,17 +69,6 @@ const ContactSection = () => {
           ))}
         </div>
 
-        {/* CTA Principal */}
-        <div className="text-center">
-          <Button 
-            onClick={handleWhatsAppClick}
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-6 text-lg font-semibold shadow-soft hover:shadow-hover transition-smooth"
-            size="lg"
-          >
-            <MessageCircle className="mr-3" size={24} />
-            Chamar no WhatsApp
-          </Button>
-        </div>
       </div>
     </section>
   );

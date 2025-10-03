@@ -15,21 +15,21 @@ const AboutSection = () => {
               Sobre Nós
             </h2>
             
-            <p className="text-lg md:text-xl text-foreground leading-relaxed">
-              O <strong className="text-primary">Pertin sô</strong> nasceu com a ideia de oferecer praticidade e preços justos para a vizinhança. Aqui você encontra produtos do dia a dia com carinho e dedicação.
+            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-8">
+              O <strong className="text-primary">Pertin sô</strong> é um mercado autônomo que nasceu com a proposta de oferecer comodidade e preços justos para o seu condomínio, sua empresa e sua academia. Os produtos são selecionados com muito cuidado para trazer praticidade e comodidade no seu dia a dia.
             </p>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center lg:text-left">
-                <h3 className="text-xl font-semibold text-primary mb-2">Missão</h3>
-                <p className="text-muted-foreground">Facilitar a vida da vizinhança.</p>
+                <p className="text-lg font-semibold text-primary">O seu condomínio valoriza</p>
               </div>
               
               <div className="text-center lg:text-left">
-                <h3 className="text-xl font-semibold text-primary mb-2">Nossos Valores</h3>
-                <p className="text-muted-foreground">
-                  Qualidade, proximidade e atendimento acolhedor.
-                </p>
+                <p className="text-lg font-semibold text-primary">A sua academia fica mais completa</p>
+              </div>
+
+              <div className="text-center lg:text-left">
+                <p className="text-lg font-semibold text-primary">A sua empresa ganha vida</p>
               </div>
             </div>
           </div>
