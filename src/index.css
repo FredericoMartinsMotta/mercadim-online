@@ -78,6 +78,22 @@ Verde musgo (#2E6B4D), Amarelo ouro (#F5B82E), Branco, Cinza claro (#F2F2F2)
   body {
     @apply bg-background text-foreground scroll-smooth;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-image: url('/src/assets/background-pattern.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsl(var(--background) / 0.92);
+    z-index: -1;
   }
 
   html {

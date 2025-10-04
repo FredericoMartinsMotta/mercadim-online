@@ -1,4 +1,3 @@
-import { Coffee, ShoppingBasket, Sparkles } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import bebidasImage from '@/assets/produtos-bebidas-real.jpg';
 import merceariaImage from '@/assets/produtos-mercearia-real.jpg';
@@ -8,31 +7,19 @@ const ProductsSection = () => {
   const products = [
     {
       title: 'Bebidas Geladas',
-      description: 'Refrigerantes, sucos e água sempre geladinhos.',
       image: bebidasImage,
-      icon: Coffee,
-      emoji: '🥤'
     },
     {
       title: 'Mercearia e Padaria',
-      description: 'Pães frescos, grãos, massas e produtos básicos do dia a dia.',
       image: merceariaImage,
-      icon: ShoppingBasket,
-      emoji: '🍞'
     },
     {
       title: 'Higiene e Limpeza',
-      description: 'Produtos de limpeza e higiene pessoal das melhores marcas.',
       image: limpezaImage,
-      icon: Sparkles,
-      emoji: '🧼'
     },
     {
       title: 'Salgadinhos e Doces',
-      description: 'Variedade de snacks e guloseimas para todos os gostos.',
       image: bebidasImage,
-      icon: Coffee,
-      emoji: '🍫'
     }
   ];
 
@@ -61,13 +48,9 @@ const ProductsSection = () => {
               </div>
               
               <CardContent className="p-6 text-center">
-                <div className="text-4xl mb-3">{product.emoji}</div>
-                <h3 className="text-xl font-semibold text-primary mb-2">
+                <h3 className="text-xl font-semibold text-primary">
                   {product.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {product.description}
-                </p>
               </CardContent>
             </Card>
           ))}
