@@ -12,7 +12,7 @@ const ContactSection = () => {
 
   const handleInstagramClick = () => {
     // Substitua pelo Instagram real
-    window.open('https://instagram.com/pertinso', '_blank');
+    window.open('https://instagram.com/pertin.so', '_blank');
   };
 
   const contactInfo = [
@@ -26,7 +26,7 @@ const ContactSection = () => {
     {
       icon: Instagram,
       title: 'Instagram',
-      description: '@pertinso',
+      description: '@pertin.so',
       action: handleInstagramClick,
       color: 'text-pink-600'
     }
