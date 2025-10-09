@@ -12,25 +12,21 @@ const AboutSection = () => {
           {/* Texto */}
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Sobre Nós
+              Pertin sô: o mercadim de confiança, agora no seu espaço
             </h2>
             
-            <p className="text-lg md:text-xl text-foreground leading-relaxed mb-8">
-              O <strong className="text-primary">Pertin sô</strong> é um mercado autônomo que nasceu com a proposta de oferecer comodidade e preços justos para o seu condomínio, sua empresa e sua academia. Os produtos são selecionados com muito cuidado para trazer praticidade e comodidade no seu dia a dia.
-            </p>
-
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center lg:text-left">
-                <p className="text-lg font-semibold text-primary">O seu condomínio valoriza</p>
-              </div>
+            <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed">
+              <p>
+                A gente nasceu em Uberaba-MG com uma missão simples: levar praticidade e confiança para o dia a dia das pessoas.
+              </p>
               
-              <div className="text-center lg:text-left">
-                <p className="text-lg font-semibold text-primary">A sua academia fica mais completa</p>
-              </div>
-
-              <div className="text-center lg:text-left">
-                <p className="text-lg font-semibold text-primary">A sua empresa ganha vida</p>
-              </div>
+              <p>
+                O nome <strong className="text-primary">Pertin sô</strong> vem do nosso jeito mineiro de dizer "pertinho" — porque queremos estar sempre pertinho de você, oferecendo o essencial com tecnologia, conforto e segurança.
+              </p>
+              
+              <p>
+                Nosso propósito é transformar espaços comuns em locais mais práticos, modernos e funcionais.
+              </p>
             </div>
           </div>
         </div>
