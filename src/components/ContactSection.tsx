@@ -37,7 +37,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-            Quer um Pertin sô no seu espaço?
+            Quer um Pertin sô no seu espaço??
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             Leve conveniência, tecnologia e confiança para o seu ambiente.<br />
