@@ -39,16 +39,34 @@ const Header = () => {
               Início
             </button>
             <button 
+              onClick={() => scrollToSection('como-funciona')}
+              className="text-foreground hover:text-primary transition-smooth"
+            >
+              Como funciona
+            </button>
+            <button 
+              onClick={() => scrollToSection('beneficios')}
+              className="text-foreground hover:text-primary transition-smooth"
+            >
+              Vantagens
+            </button>
+            <button 
               onClick={() => scrollToSection('sobre')}
               className="text-foreground hover:text-primary transition-smooth"
             >
               Sobre
             </button>
             <button 
-              onClick={() => scrollToSection('vantagens')}
+              onClick={() => scrollToSection('para-quem')}
               className="text-foreground hover:text-primary transition-smooth"
             >
-              Vantagens
+              Ambientes
+            </button>
+            <button 
+              onClick={() => scrollToSection('depoimentos')}
+              className="text-foreground hover:text-primary transition-smooth"
+            >
+              Avaliações
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
@@ -80,16 +98,34 @@ const Header = () => {
                 Início
               </button>
               <button 
+                onClick={() => scrollToSection('como-funciona')}
+                className="text-left text-foreground hover:text-primary transition-smooth"
+              >
+                Como funciona
+              </button>
+              <button 
+                onClick={() => scrollToSection('beneficios')}
+                className="text-left text-foreground hover:text-primary transition-smooth"
+              >
+                Vantagens
+              </button>
+              <button 
                 onClick={() => scrollToSection('sobre')}
                 className="text-left text-foreground hover:text-primary transition-smooth"
               >
                 Sobre
               </button>
               <button 
-                onClick={() => scrollToSection('vantagens')}
+                onClick={() => scrollToSection('para-quem')}
                 className="text-left text-foreground hover:text-primary transition-smooth"
               >
-                Vantagens
+                Ambientes
+              </button>
+              <button 
+                onClick={() => scrollToSection('depoimentos')}
+                className="text-left text-foreground hover:text-primary transition-smooth"
+              >
+                Avaliações
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
