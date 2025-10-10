@@ -45,10 +45,10 @@ const Header = () => {
               Sobre
             </button>
             <button 
-              onClick={() => scrollToSection('produtos')}
+              onClick={() => scrollToSection('vantagens')}
               className="text-foreground hover:text-primary transition-smooth"
             >
-              Produtos
+              Vantagens
             </button>
             <button 
               onClick={() => scrollToSection('contato')}
@@ -86,10 +86,10 @@ const Header = () => {
                 Sobre
               </button>
               <button 
-                onClick={() => scrollToSection('produtos')}
+                onClick={() => scrollToSection('vantagens')}
                 className="text-left text-foreground hover:text-primary transition-smooth"
               >
-                Produtos
+                Vantagens
               </button>
               <button 
                 onClick={() => scrollToSection('contato')}
