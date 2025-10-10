@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '5534988013859';
+    const phoneNumber = '5534998013859';
     const message = 'Olá! Quero um Pertin sô no meu espaço.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -19,7 +19,7 @@ const ContactSection = () => {
     {
       icon: MessageCircle,
       title: 'WhatsApp',
-      description: '(34) 9 8801-3859',
+      description: '(34) 9 98013859',
       action: handleWhatsAppClick,
       color: 'text-green-600'
     },

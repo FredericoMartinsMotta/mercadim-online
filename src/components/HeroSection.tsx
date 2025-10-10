@@ -4,7 +4,7 @@ import heroImage from '@/assets/hero-mercado-real.png';
 import logoImage from '@/assets/logo-pertin-so.png';
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '5534988013859';
+    const phoneNumber = '5534998013859';
     const message = 'Olá! Quero um Pertin sô no meu espaço.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
