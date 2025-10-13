@@ -45,13 +45,10 @@ const HowItWorksSection = () => {
           {steps.map((step, index) => (
             <Card key={index} className="group shadow-soft hover:shadow-hover transition-smooth">
               <CardContent className="p-6 text-center">
-                <div className="relative mb-4">
-                  <div className="text-6xl font-bold text-primary/10 absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
-                    {step.number}
-                  </div>
+                <div className="mb-4">
                   <step.icon 
                     size={48} 
-                    className="mx-auto text-primary relative z-10 group-hover:scale-110 transition-smooth" 
+                    className="mx-auto text-primary group-hover:scale-110 transition-smooth" 
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-primary mb-3">
