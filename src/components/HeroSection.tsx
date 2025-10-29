@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-mercado-real.png';
-import logoImage from '@/assets/logo-pertin-so-novo.svg';
+import logoImage from '@/assets/logo-pertin-so.svg';
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = '5534998013859';
