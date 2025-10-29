@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-mercado-real.png';
-import logoImage from '@/assets/logo-pertin-so.png';
+import logoImage from '@/assets/logo-pertin-so-novo.svg';
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = '5534998013859';
@@ -18,8 +18,8 @@ const HeroSection = () => {
             <div className="mb-6">
               <img 
                 src={logoImage} 
-                alt="Pertin sô" 
-                className="h-32 md:h-40 lg:h-48 mx-auto lg:mx-0 mb-6"
+                alt="Pertin Sô" 
+                className="h-44 md:h-56 lg:h-72 mx-auto lg:mx-0 mb-8 drop-shadow-lg"
               />
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left text-[#2e6b4d]">
                 O mercado autônomo que valoriza o seu espaço

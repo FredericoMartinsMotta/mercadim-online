@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from '@/assets/logo-pertin-so.png';
+import logo from '@/assets/logo-pertin-so-novo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +22,11 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img 
               src={logo} 
-              alt="Pertin sô" 
-              className="h-10 w-auto"
+              alt="Pertin Sô" 
+              className="h-12 w-auto"
             />
             <span className="text-xl font-bold text-primary hidden sm:inline">
-              Pertin sô
+              Pertin Sô
             </span>
           </div>
 
