@@ -10,18 +10,7 @@ const HeroSection = () => {
     window.open(whatsappUrl, '_blank');
   };
   return (
-    <section id="inicio" className="relative min-h-screen">
-      {/* Faixa superior com logo */}
-      <div className="relative z-10 bg-muted/80 backdrop-blur-sm py-8">
-        <div className="container mx-auto px-4 lg:px-8 flex justify-center">
-          <img 
-            src={logoImage} 
-            alt="Pertin Sô" 
-            className="h-32 md:h-40 lg:h-48 drop-shadow-lg"
-          />
-        </div>
-      </div>
-
+    <section id="inicio" className="relative min-h-screen pt-16">
       {/* Background com imagem transparente */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
@@ -31,8 +20,14 @@ const HeroSection = () => {
       </div>
 
       {/* Conteúdo */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-20 pb-20 min-h-[calc(100vh-12rem)] flex items-center">
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 py-20 min-h-screen flex items-center">
         <div className="max-w-3xl mx-auto text-center">
+          <img 
+            src={logoImage} 
+            alt="Pertin Sô" 
+            className="h-56 md:h-72 lg:h-96 mx-auto mb-12 drop-shadow-lg"
+          />
+          
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-8">
             O mercado autônomo que valoriza o seu espaço
           </h1>
