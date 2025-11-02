@@ -9,43 +9,45 @@ const HeroSection = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-  return <section id="inicio" className="pt-16 min-h-screen flex items-center hero-gradient rounded-sm bg-black/[0.31]">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
-          {/* Conteúdo de texto */}
-          <div className="text-center lg:text-left">
-            <div className="mb-6">
-              <img 
-                src={logoImage} 
-                alt="Pertin Sô" 
-                className="h-44 md:h-56 lg:h-72 mx-auto lg:mx-0 mb-8 drop-shadow-lg"
-              />
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left text-[#2e6b4d]">
-                O mercado autônomo que valoriza o seu espaço
-              </h1>
-            </div>
-            
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Instale um mini mercado 24h no seu condomínio, academia ou empresa — sem atendente, sem custo e com total segurança.
-            </p>
-            
-            <Button onClick={handleWhatsAppClick} size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-6 font-semibold shadow-soft hover:shadow-hover transition-smooth text-xl">
-              <MessageCircle className="mr-3" size={24} />
-              Quero um Pertin sô no meu espaço
-            </Button>
-          </div>
-
-          {/* Imagem */}
-          <div className="text-center">
-            <img 
-              src={heroImage} 
-              alt="Interior do Pertin sô" 
-              className="w-full max-w-lg mx-auto rounded-2xl shadow-soft hover:shadow-hover transition-smooth"
-            />
-          </div>
+  return (
+    <section id="inicio" className="relative min-h-screen">
+      {/* Faixa superior com logo */}
+      <div className="relative z-10 bg-muted/80 backdrop-blur-sm py-8">
+        <div className="container mx-auto px-4 lg:px-8 flex justify-center">
+          <img 
+            src={logoImage} 
+            alt="Pertin Sô" 
+            className="h-32 md:h-40 lg:h-48 drop-shadow-lg"
+          />
         </div>
       </div>
-    </section>;
+
+      {/* Background com imagem transparente */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm"></div>
+      </div>
+
+      {/* Conteúdo */}
+      <div className="relative z-10 container mx-auto px-4 lg:px-8 pt-20 pb-20 min-h-[calc(100vh-12rem)] flex items-center">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-8">
+            O mercado autônomo que valoriza o seu espaço
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-foreground mb-12 leading-relaxed">
+            Instale um mini mercado 24h no seu condomínio, academia ou empresa — sem atendente, sem custo e com total segurança.
+          </p>
+          
+          <Button onClick={handleWhatsAppClick} size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-6 font-semibold shadow-soft hover:shadow-hover transition-smooth text-xl">
+            <MessageCircle className="mr-3" size={24} />
+            Quero um Pertin sô no meu espaço
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
 };
 export default HeroSection;
