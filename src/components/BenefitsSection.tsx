@@ -10,8 +10,8 @@ const BenefitsSection = () => {
     },
     {
       icon: Clock,
-      title: 'Funcionamento 24 horas',
-      description: 'Seu espaço disponível o tempo todo, sem depender de equipe.'
+      title: 'Funcionamento o dia todo, a noite toda',
+      description: 'Seu espaço disponível sem depender de funcionários.'
     },
     {
       icon: Smile,
