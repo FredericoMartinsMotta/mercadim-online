@@ -36,10 +36,10 @@ const ContactSection = () => {
     <section id="contato" className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6 px-2">
             Quer um Pertin sô no seu espaço??
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-8 px-4">
             Leve conveniência, tecnologia e confiança para o seu ambiente.<br />
             Fale com a gente e descubra como é fácil instalar seu mercado autônomo.
           </p>
@@ -47,10 +47,11 @@ const ContactSection = () => {
           <Button 
             onClick={handleWhatsAppClick}
             size="lg" 
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-8 py-6 font-semibold shadow-soft hover:shadow-hover transition-smooth text-xl"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-5 md:px-8 md:py-6 font-semibold shadow-soft hover:shadow-hover transition-smooth text-base md:text-lg lg:text-xl mx-4"
           >
-            <MessageCircle className="mr-3" size={24} />
-            Falar com a equipe Pertin sô
+            <MessageCircle className="mr-2 md:mr-3" size={20} />
+            <span className="hidden sm:inline">Falar com a equipe Pertin sô</span>
+            <span className="sm:hidden">Falar Conosco</span>
           </Button>
         </div>
 
@@ -63,12 +64,12 @@ const ContactSection = () => {
               }`}
               onClick={item.action}
             >
-              <CardContent className="p-6 text-center">
+              <CardContent className="p-5 md:p-6 text-center">
                 <item.icon 
-                  size={40} 
-                  className={`mx-auto mb-4 ${item.color} group-hover:scale-110 transition-smooth`} 
+                  size={36} 
+                  className={`mx-auto mb-3 md:mb-4 ${item.color} group-hover:scale-110 transition-smooth`} 
                 />
-                <h3 className="text-lg font-semibold text-primary mb-2">
+                <h3 className="text-base sm:text-lg font-semibold text-primary mb-2">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground text-sm">

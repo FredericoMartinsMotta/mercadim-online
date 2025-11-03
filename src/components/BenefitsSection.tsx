@@ -38,8 +38,8 @@ const BenefitsSection = () => {
   return (
     <section id="beneficios" className="py-20 section-alt">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4 px-2">
             Vantagens para quem instala o Pertin sô
           </h2>
         </div>
@@ -47,15 +47,15 @@ const BenefitsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <Card key={index} className="group shadow-soft hover:shadow-hover transition-smooth">
-              <CardContent className="p-6">
+              <CardContent className="p-5 md:p-6">
                 <benefit.icon 
-                  size={40} 
-                  className="text-primary mb-4 group-hover:scale-110 transition-smooth" 
+                  size={36} 
+                  className="text-primary mb-3 md:mb-4 group-hover:scale-110 transition-smooth" 
                 />
-                <h3 className="text-xl font-semibold text-primary mb-3">
+                <h3 className="text-lg sm:text-xl font-semibold text-primary mb-2 md:mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {benefit.description}
                 </p>
               </CardContent>

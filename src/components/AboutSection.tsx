@@ -11,11 +11,11 @@ const AboutSection = () => {
 
           {/* Texto */}
           <div className="order-1 lg:order-2 text-center lg:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6 px-2">
               Pertin sô: o mercadim de confiança, agora no seu espaço
             </h2>
             
-            <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed">
+            <div className="space-y-4 md:space-y-6 text-base sm:text-lg md:text-xl text-foreground leading-relaxed px-2">
               <p>
                 A gente nasceu em Uberaba-MG com uma missão simples: levar praticidade e confiança para o dia a dia das pessoas.
               </p>

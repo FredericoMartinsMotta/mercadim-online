@@ -26,11 +26,11 @@ const ProductsSection = () => {
   return (
     <section id="produtos" className="py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 md:mb-4 px-2">
             Nossos Produtos
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             As melhores marcas e uma ampla variedade vão estar à sua disposição.
           </p>
         </div>
@@ -47,8 +47,8 @@ const ProductsSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-smooth"></div>
               </div>
               
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-primary">
+              <CardContent className="p-4 md:p-6 text-center">
+                <h3 className="text-lg sm:text-xl font-semibold text-primary">
                   {product.title}
                 </h3>
               </CardContent>
